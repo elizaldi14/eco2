@@ -4,9 +4,9 @@
                     <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
                     <div class="nav-container">
                         <ul>
-                            <li><a href="./">Home</a></li>
-                            <li><a href="./news.php">News</a></li>
-                            <li><a href="./contact.php">Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="<?=ROOT?>/news-3">News</a></li>
+                            <li><a href="<?=ROOT?>/contact-2">Contact</a></li>
                             <li><a href="./about.php">About us</a></li>
                         </ul>
                     </div>
