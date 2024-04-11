@@ -38,7 +38,7 @@
     <div class="navigation">
         <div class="row">
             <div class="tiny-4 small-4 medium-4">
-                <a href="/" class="logo">
+                <a href="<?=ROOT?>/home" class="logo">
                     <svg width="199" height="73" viewBox="0 0 199 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_70_33" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="73" height="73">
                             <circle cx="36.5" cy="36.5" r="36.5" fill="#D9D9D9"/>
