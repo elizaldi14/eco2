@@ -185,7 +185,7 @@
         <div class="container">
             <div class="row tiny-middle">
                 <div class="tiny">
-                    <h2>Recent News</h2>
+                    <h2 class="tiny-center">Recent News</h2>
 
                     <div class="card-container">
                     <?php
