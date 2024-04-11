@@ -7,8 +7,6 @@
             Data provided by <a href="https://www.thegreenwebfoundation.org/" target="_blank">The Green Web Foundation</a> and <a href=" https://developers.google.com/web/tools/lighthouse" target="_blank">Lighthouse</a>.
         </p>
         <p><a href="/contact">Contact</a> | <a href="/news">News</a> | <a href="/privacy">Privacy Policy</a> | <a href="/about">FAQ</a> | <a href="/badge">Get the badge</a></p>
-        <br>
-        <br>
         <div id="co2Badge"></div>
         <script src="/assets/js/badge.js"></script>
         <script>
