@@ -63,7 +63,7 @@
 
                 </a>
             </div>
-            <?php include './assets/components/header.php';?>
+            <?php include '../app/pages/includes/header-1.php';?>
         </div>
     </div>
 </div>
@@ -254,7 +254,8 @@
 
 <!--Footer--->
 
-<?php include './assets/components/footer.php';?>
+<?php include '../app/pages/includes/footer-1.php';?>
+
 <script src="./assets/js/countUp.js "></script>
 <script src="./assets/js/app.js"></script>
 
