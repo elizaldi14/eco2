@@ -184,11 +184,27 @@
     <section class="featured">
         <div class="container">
             <div class="row tiny-middle">
-                <div class="tiny tiny-center">
+                <div class="tiny">
                     <h2>Recent News</h2>
 
+                    <div class="card-container">
+                    <?php
+
+                    $query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id order by id desc limit 3";
+                    $rows = query($query);
+                    if($rows){
+
+                    foreach($rows as $row){
+                        include '../app/pages/includes/post-card.php';
+                    }
+
+                    }else {
+                    echo "No items found!";
+                    }
+
                     
-                    <h2>NEWS CARDS HERE</h2>
+                    ?>
+                    </div>
 
                 </div>
             </div>
