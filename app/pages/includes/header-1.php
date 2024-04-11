@@ -10,9 +10,16 @@
                 <li><a href="./about.php">About us</a></li>
                 <?php if(!logged_in()):?>
                     <a href="<?=ROOT?>/login" style="position: relative; top: 10px; left: 20px;">
-                        <img src="<?=ROOT?>/../public/assets/imgs/user-icon.png" style="" width="36" height="36" class="rounded-circle">
+                        <img src="<?=ROOT?>/../public/assets/imgs/user-icon.png" style="" width="36" height="36">
                     </a>
-            <?php endif;?>
+                <?php endif;?>
+
+                <?php if(logged_in()):?>
+                    <a href="<?=ROOT?>/admin" style="position: relative; top: 15px; left: 20px;">
+                        <img src="<?=get_image(user('image'))?>" style="object-fit: cover; border-radius:20px;" width="40" height="40">
+                    </a>
+                <?php endif;?>
+                
             </ul>
         </div>
     </nav>
