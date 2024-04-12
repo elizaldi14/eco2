@@ -69,7 +69,7 @@
 </div>
 	<div class="container ">
 		<div class="row ">
-			<div class="tiny-12 ">
+			<div class="tiny-12 tiny-center">
 				<h1>News</h1>
 				<p style="font-size:1.35rem;">The latest in climate tech and insightful articles on the state of climate change.</p>
 			</div>
@@ -84,168 +84,29 @@
 <main>
 	<section id="articles ">
 		<div class="container ">
-			<div class="row ">
+			<div class="row">
 
-				<!-- <div class="tiny-12 small-8 small-offset-2 ">
-					<a href="" target="_blank " class="article ">
-						<h2 class="title "></h2>
-						<p class="excerpt "></p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category "></li>
-								<li class="category "></li>
-							</ul>
-							<time class="date " datetime=""></time>
-						</footer>
-					</a>
-				</div> -->
+			<?php
 
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://co2.observer#timeline " class="article ">
-						<h2 class="title ">co2.observer reaches 250.000 scans</h2>
-						<p class="excerpt ">We are thrilled to announce a significant milestone today: achieving our initial target on the journey to scan 1,000,000 sites. This marks a major step forward in our ambitious endeavor!</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Announcement</li>
-							</ul>
-							<time class="date " datetime="2023-11-14 ">November, 2023</time>
-						</footer>
-					</a>
-				</div>
+			$limit = 10;
+			$offset = ($PAGE['page_number'] - 1) * $limit;
 
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://news.un.org/en/story/2023/11/1143187 " target="_blank " class="article ">
-						<h2 class="title ">Explainer: How AI helps combat climate change</h2>
-						<p class="excerpt ">The recent launch of the UN-led AI Advisory Body advanced a growing global trend to harness machine learning to find solutions to common challenges. AI is upping the data crunching game and a growing number of governments, businesses and civil society partners are working together to reap its many benefits.</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Explainer</li>
-							</ul>
-							<time class="date " datetime="2023-11-03 ">November, 2023</time>
-						</footer>
-					</a>
-				</div>
+			$query = "select posts.*,categories.category from posts join categories on posts.category_id = categories.id order by id desc limit $limit offset $offset";
+			$rows = query($query);
+			if($rows){
 
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://www.pwc.com/gx/en/issues/esg/state-of-climate-tech-2023-investment.html " target="_blank " class="article ">
-						<h2 class="title ">How can the world reverse the fall in climate tech investment?</h2>
-						<p class="excerpt ">The need for climate technology continues to rise, but equity investment in start-ups has declined for a second year amid tough conditions in private markets. PwC's fourth annual State of Climate Tech report finds investors expanding their search for growth potential and climate impact.</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Climate Tech</li>
-								<li class="category ">Climate and Sustainability</li>
-							</ul>
-							<time class="date " datetime="2023-10-17 ">October, 2023</time>
-						</footer>
-					</a>
-				</div>
+			foreach($rows as $row){
+				include '../app/pages/includes/post-card.php';
+			}
 
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health " target="_blank " class="article ">
-						<h2 class="title ">Climate change</h2>
-						<p class="excerpt ">Climate change presents a fundamental threat to human health. It affects the physical environment as well as all aspects of both natural and human systems – including social and economic conditions and the functioning of health systems.</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">State of Climate Change</li>
-							</ul>
-							<time class="date " datetime="2023-10-12 ">October, 2023</time>
-						</footer>
-					</a>
-				</div>
+			}else {
+			echo "No items found!";
+			}
 
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://www.thegreenwebfoundation.org/news/how-much-of-the-internet-is-covered-by-credible-net-zero-targets-an-update/" target="_blank " class="article ">
-						<h2 class="title ">How much of the internet is covered by credible Net Zero targets? An update</h2>
-						<p class="excerpt ">Over this summer, we ran a project with our friends at Wikirate – a non profit dedicated to the idea of “Wikipedia, for corporate social responsibility data” – to understand how much of the internet is covered by credible Net Zero targets. We finished collecting the data earlier this month – read on to find out how it went, and what happens next.</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Climate</li>
-								<li class="category ">Policy</li>
-							</ul>
-							<time class="date " datetime="2023-09-27 ">September, 2023</time>
-						</footer>
-					</a>
-				</div>
-
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://ourworldindata.org/fossil-fuels " target="_blank " class="article ">
-						<h2 class="title ">Fossil Fuels</h2>
-						<p class="excerpt ">For most of human history our ancestors relied on very basic forms of energy: human muscle, animal muscle and the burning of biomass such as wood or crops. But the Industrial Revolution unlocked a whole new energy resource: fossil fuels. Fossil energy has been a fundamental driver of the technological, social, economic and development progress which has followed.</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Energy</li>
-								<li class="category ">Fossil Fuels</li>
-							</ul>
-							<time class="date " datetime="2023-10-02 ">October, 2022</time>
-						</footer>
-					</a>
-				</div>
-
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://www.mckinsey.com/capabilities/sustainability/our-insights/innovating-to-net-zero-an-executives-guide-to-climate-technology " target="_blank " class="article ">
-						<h2 class="title ">Innovating to net zero: An executive's guide to climate technology</h2>
-						<p class="excerpt ">New technologies represent a critical part of the world's decarbonization tool kit—and the world does not yet have all the technologies that it would need to solve the net-zero equation by balancing sources and sinks of greenhouse-gas (GHG) emissions.</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Innovation</li>
-							</ul>
-							<time class="date " datetime="2021-10-28 ">Ocotber, 2021</time>
-						</footer>
-					</a>
-				</div>
-
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://www.weforum.org/agenda/2021/07/fight-climate-change-with-technology/#:~:text=,1 " target="_blank " class="article ">
-						<h2 class="title ">How Can Technology Help Combat Climate Change</h2>
-						<p class="excerpt ">As society pressures leaders for a more environmentally-friendly agenda, governments responsible for 63% of world emissions have committed to net zero with corporate net-zero commitments covering 12% of the global economy (representing $9.81 trillion in revenue).</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Climate Change</li>
-							</ul>
-							<time class="date " datetime="2021-07-12 ">July, 2021</time>
-						</footer>
-					</a>
-				</div>
-
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://unfccc.int/news/innovative-technology-key-to-climate-action " target="_blank " class="article ">
-						<h2 class="title ">Innovative Technology Key to Climate Action</h2>
-						<p class="excerpt ">UN Climate Change News, 3 May 2021 – Fostering the use of innovative climate technology to reduce greenhouse gas emissions and adapt to the impacts of climate change was the focus of a recent meeting of a key body of UN Climate Change, the Technology Executive Committee</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Climate Action</li>
-							</ul>
-							<time class="date " datetime="2021-05-03 ">May, 2021</time>
-						</footer>
-					</a>
-				</div>
+			?>
 				
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://ourworldindata.org/renewable-energy " target="_blank " class="article ">
-						<h2 class="title ">How much of the internet is covered by credible Net Zero targets? An update</h2>
-						<p class="excerpt ">Renewable energy sources are growing quickly and will play a vital role in tackling climate change.</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Energy</li>
-								<li class="category ">Renewable Energy</li>
-							</ul>
-							<time class="date " datetime="2020-12-17 ">December, 2020</time>
-						</footer>
-					</a>
-				</div>		
+				
 
-				<div class="tiny-12 small-8 small-offset-2 ">
-					<a href="https://internethealthreport.org/2018/the-internet-uses-more-electricity-than/" target="_blank " class="article ">
-						<h2 class="title ">The Internet uses more electricity than…</h2>
-						<p class="excerpt ">The Internet’s data centers alone may already have the same CO2 footprint as global air travel. The good news is that many major Internet companies are becoming more energy conscious, and choosing more renewable sources of power for data centers and operations.</p>
-						<footer class="footer ">
-							<ul class="categories ">
-								<li class="category ">Decentralization</li>
-							</ul>
-							<time class="date " datetime="2018-04-01 ">April, 2018</time>
-						</footer>
-					</a>
-				</div>
 
 			</div>
 		</div>
