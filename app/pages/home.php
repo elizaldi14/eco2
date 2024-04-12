@@ -79,9 +79,6 @@
                 <p>We are a team united by the cause of climate action, our initiative is focused on addressing
                     the challenges of climate change and actively contribute to Sustainable Development Goal number 13 of the
                     ONU.</p>
-                <form class="input-group" id="websiteForm">
-                    <input class="websiteInput" type="text" placeholder="example.com" required><button class="websiteSubmit" onclick="submitScan()">Scan Website</button>
-                </form>
                 <br><br>
                                                 <div class="banner">We've finally reached our second milestone! Thank you for your continued support! 💪 <a href="#timeline">Read more...</a></div>
                                             </div>

@@ -1,12 +1,10 @@
-<footer class="site_footer">
+<footer class="site_footer" style="height: 100px; margin-top: 150px;">
     <div class="site_footer_inner">
         <p>
-            Designed, built, and maintained by <a href="https://triss.dev" target="_blank">Tristan White</a> © 2023-2024.<br>
-            Powered by <a href="https://cloudservers.dk" target="_blank">Cloudservers</a>.
+            Designed, built, and maintained by <a href="https://github.com/elizaldi14" target="_blank">Elizaldi</a> © 2024.<br>
             <br>
-            Data provided by <a href="https://www.thegreenwebfoundation.org/" target="_blank">The Green Web Foundation</a> and <a href=" https://developers.google.com/web/tools/lighthouse" target="_blank">Lighthouse</a>.
         </p>
-        <p><a href="/contact">Contact</a> | <a href="/news">News</a> | <a href="/privacy">Privacy Policy</a> | <a href="/about">FAQ</a> | <a href="/badge">Get the badge</a></p>
+        <p><a href="/contact">Contact</a> | <a href="/news">News</a> | <a href="/privacy">Privacy Policy</a> | <a href="/about">About</a></p>
         <div id="co2Badge"></div>
         <script src="/assets/js/badge.js"></script>
         <script>
