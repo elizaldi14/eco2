@@ -49,7 +49,7 @@
 
                 </a>
             </div>
-            <?php include '../app/pages/includes/header-1.php';?>
+            <?php include '../app/pages/includes/header.php';?>
         </div>
     </div>
 </div>
@@ -188,7 +188,7 @@
             </div>
             <div class="row">
                 <div class="tiny tiny-center">
-                    <br><a href="<?=ROOT?>/news-3" class="btn normal">See Other News</a>
+                    <br><a href="<?=ROOT?>/news" class="btn normal">See Other News</a>
                 </div>
             </div>
         </div>
@@ -221,7 +221,7 @@
 
 <!--Footer--->
 
-<?php include '../app/pages/includes/footer-1.php';?>
+<?php include '../app/pages/includes/footer.php';?>
 
 <div class="overlay">
     <div class="modal">
