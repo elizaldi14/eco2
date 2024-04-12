@@ -75,15 +75,16 @@
 
 				<div class="tiny-12 small-10 medium-8 small-offset-1 medium-offset-2 ">
 
-                    <form action="sendmail.php " method="POST ">
-                        <label for="name ">Name <span class="required ">(required)</span></label>
-                        <input type="text " name="your-name " value="" size="40 " id="name " aria-label="Name " aria-required="true " aria-invalid="false " required placeholder="Your name here ">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="e0230737-e106-4974-9f36-9af4a2f965b1">
+                        <label for="name ">Name <span class="required">(required)</span></label>
+                        <input type="text " name="your-name" value="" size="40 " id="name " aria-label="Name" aria-required="true" aria-invalid="false " required placeholder="Your name here ">
                         
                         <label for="e-mail ">Email address <span class="required ">(required)</span></label>
                         <input type="email " name="your-email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ " size="40 " id="e-mail " aria-label="Email address " aria-required="true " aria-invalid="false " required placeholder="Your email here ">
                         
                         <label for="message ">Message <span class="required ">(required)</span></label>
-                        <textarea name="message " rows="6 " cols="25 " id="message" aria-label="Message " aria-required="true " aria-invalid="false " required placeholder="Your message here "></textarea>
+                        <textarea name="message " rows="6" cols="25" id="message" aria-label="Message " aria-required="true " aria-invalid="false " required placeholder="Your message here "></textarea>
 
                         <footer>
                             <div class="button-group">
