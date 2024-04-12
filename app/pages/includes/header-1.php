@@ -7,7 +7,7 @@
                 <li><a href="<?=ROOT?>/home">Home</a></li>
                 <li><a href="<?=ROOT?>/news-3">News</a></li>
                 <li><a href="<?=ROOT?>/contact-2">Contact</a></li>
-                <li><a href="./about.php">About us</a></li>
+                <li><a href="<?=ROOT?>/about-1">About us</a></li>
                 <?php if(!logged_in()):?>
                     <a href="<?=ROOT?>/login" style="position: relative; top: 10px; left: 20px;">
                         <img src="<?=ROOT?>/../public/assets/imgs/user-icon.png" style="" width="36" height="36">

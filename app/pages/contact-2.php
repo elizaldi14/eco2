@@ -1,40 +1,26 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>CO2 Observer | Contact</title>
-        <link rel="stylesheet" href="./assets/css/gridder.css">
-        <link rel="stylesheet" href="./assets/css/app.css">
-        <meta name="description" content="Reach out with feature requests or any other general query.">
-        <meta property="og:title" content="CO2 Observer | Contact">
-        <meta property="og:description" content="Reach out with feature requests or any other general query.">
-        <meta property="og:image" content="https://co2.observer/assets/img/logo-gfx.png">
-        <meta property="og:image:alt" content="Reach out with feature requests or any other general query.">
-        <meta property="og:locale" content="en_GB">
-        <meta property="og:type" content="website"><meta name="twitter:card"content="https://co2.observer/assets/img/logo-gfx.png"">
-    <meta property="og:url " content="https://co2.observer ">
-    <link rel="canonical " href="https://co2.observer ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Ecomania | Contact</title>
 
-    <link rel="apple-touch-icon " sizes="180x180 " href="/assets/img/apple-touch-icon.png ">
-    <link rel="icon " type="image/png " sizes="32x32 " href="/assets/img/favicon-32x32.png ">
-    <link rel="icon " type="image/png " sizes="16x16 " href="/assets/img/favicon-16x16.png ">
-    <link rel="manifest " href="/assets/img/site.webmanifest ">
-    <link rel="mask-icon " href="/assets/img/safari-pinned-tab.svg " color="#4e7d6a ">
-    <link rel="shortcut icon " href="/assets/img/favicon.ico ">
-    <meta name="msapplication-TileColor " content="#e5f4df ">
-    <meta name="msapplication-config " content="/assets/img/browserconfig.xml ">
+    <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/gridder.css">
+    <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/app.css">
+
     <meta name="theme-color " content="#ffffff ">
 </head>
 <body>
 
 <header class="header graphic-4 ">
-	<div class="container ">
-    <div class="navigation ">
+	<div class="container">
+    <div class="navigation">
         <div class="row ">
             <div class="tiny-4 small-4 medium-4 ">
-                <a href="/" class="logo ">
+                <a href="<?=ROOT?>/home" class="logo">
+                    <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
                     <svg width="199 " height="73 " viewBox="0 0 199 73 " fill="none " xmlns="http://www.w3.org/2000/svg ">
                         <mask id="mask0_70_33 " style="mask-type:alpha " maskUnits="userSpaceOnUse " x="0 " y="0 " width="73 " height="73 ">
                             <circle cx="36.5 " cy="36.5 " r="36.5 " fill="#D9D9D9 "/>
@@ -64,15 +50,15 @@
 
                 </a>
             </div>
-            <?php include './assets/components/header.php';?>
+            <?php include '../app/pages/includes/header-1.php';?>
         </div>
     </div>
 </div>
-	<div class="container ">
-		<div class="row ">
-			<div class="tiny-12 ">
+	<div class="container">
+		<div class="row">
+			<div class="tiny-12 tiny-center">
 				<h1>Contact us</h1>
-				<p style="font-size:1.35rem;">Reach out with feature requests, API access request, or any other general query.</p>
+				<p style="font-size:1.35rem;">If you have any questions, contact us.</p>
 			</div>
 		</div>
 	</div>
@@ -89,22 +75,23 @@
 
 				<div class="tiny-12 small-10 medium-8 small-offset-1 medium-offset-2 ">
 
-                    <form action="sendmail.php " method="POST ">
-                        <label for="name ">Name <span class="required ">(required)</span></label>
-                        <input type="text " name="your-name " value="" size="40 " id="name " aria-label="Name " aria-required="true " aria-invalid="false " required placeholder="Your name here ">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="e0230737-e106-4974-9f36-9af4a2f965b1">
+                        <label for="name ">Name <span class="required">(required)</span></label>
+                        <input type="text " name="your-name" value="" size="40 " id="name " aria-label="Name" aria-required="true" aria-invalid="false " required placeholder="Your name here ">
                         
                         <label for="e-mail ">Email address <span class="required ">(required)</span></label>
-                        <input type="email " name="your-email " value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ " size="40 " id="e-mail " aria-label="Email address " aria-required="true " aria-invalid="false " required placeholder="Your email here ">
+                        <input type="email " name="your-email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ " size="40 " id="e-mail " aria-label="Email address " aria-required="true " aria-invalid="false " required placeholder="Your email here ">
                         
                         <label for="message ">Message <span class="required ">(required)</span></label>
-                        <textarea name="message " rows="6 " cols="25 " id="message " aria-label="Message " aria-required="true " aria-invalid="false " required placeholder="Your message here "></textarea>
+                        <textarea name="message " rows="6" cols="25" id="message" aria-label="Message " aria-required="true " aria-invalid="false " required placeholder="Your message here "></textarea>
 
                         <footer>
-                            <div class="button-group ">
-                                <input class="btn normal " type="submit " id="contactSubmit " value="Send message ">
-                                <input class="btn normal outline " type="reset " value="Clear contact form ">
+                            <div class="button-group">
+                                <input class="btn normal" type="submit" id="contactSubmit" value="Send message ">
+                                <input class="btn normal outline " type="reset" value="Clear contact form ">
                             </div>
-                                                    </footer>
+                        </footer>
                         
                     </form>
 
@@ -117,9 +104,10 @@
 
 <!--Footer--->
 
-<?php include './assets/components/footer.php';?>
-<script src="/assets/js/countUp.js "></script>
-<script src="/assets/js/app.js "></script>
+<?php include '../app/pages/includes/footer-1.php';?>
+
+<script src="<?=ROOT?>/../public/assets/js/countUp.js"></script>
+<script src="<?=ROOT?>/../public/assets/js/app.js"></script>
 
 </body>
 </html>

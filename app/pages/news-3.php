@@ -1,29 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>CO2 Observer | News</title>
-        <link rel="stylesheet" href="./assets/css/gridder.css">
-    	<link rel="stylesheet" href="./assets/css/app.css">
-        <meta name="description" content="The latest in climate tech and insightful articles on the state of climate change.">
-        <meta property="og:title" content="CO2 Observer | News">
-        <meta property="og:description" content="The latest in climate tech and insightful articles on the state of climate change.">
-        <meta property="og:image" content="https://co2.observer/assets/img/logo-gfx.png">
-        <meta property="og:image:alt" content="The latest in climate tech and insightful articles on the state of climate change.">
-        <meta property="og:locale" content="en_GB">
-        <meta property="og:type" content="website"><meta name="twitter:card"content="https://co2.observer/assets/img/logo-gfx.png"">
-    <meta property="og:url " content="https://co2.observer ">
-    <link rel="canonical " href="https://co2.observer ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ecomania | News</title>
+    <link rel="stylesheet" href="./assets/css/gridder.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
 
-    <link rel="apple-touch-icon " sizes="180x180 " href="./assets/img/apple-touch-icon.png ">
-    <link rel="icon " type="image/png " sizes="32x32 " href="./assets/img/favicon-32x32.png ">
-    <link rel="icon " type="image/png " sizes="16x16 " href="./assets/img/favicon-16x16.png ">
-    <link rel="manifest " href="./assets/img/site.webmanifest ">
-    <link rel="mask-icon " href="./assets/img/safari-pinned-tab.svg " color="#4e7d6a ">
-    <link rel="shortcut icon " href="./assets/img/favicon.ico ">
-    <meta name="msapplication-TileColor " content="#e5f4df ">
-    <meta name="msapplication-config " content="./assets/img/browserconfig.xml ">
     <meta name="theme-color " content="#ffffff ">
 </head>
 <body>
@@ -33,7 +16,8 @@
     <div class="navigation ">
         <div class="row ">
             <div class="tiny-4 small-4 medium-4 ">
-                <a href="<?=ROOT?>/home" class="logo ">
+                <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                <a href="<?=ROOT?>/home" class="logo">
                     <svg width="199 " height="73 " viewBox="0 0 199 73 " fill="none " xmlns="http://www.w3.org/2000/svg ">
                         <mask id="mask0_70_33 " style="mask-type:alpha " maskUnits="userSpaceOnUse " x="0 " y="0 " width="73 " height="73 ">
                             <circle cx="36.5 " cy="36.5 " r="36.5 " fill="#D9D9D9 "/>
@@ -117,8 +101,8 @@
 
 <?php include '../app/pages/includes/footer-1.php';?>
 
-<script src="./assets/js/countUp.js "></script>
-<script src="./assets/js/app.js"></script>
+<script src="<?=ROOT?>/../public/assets/js/countUp.js"></script>
+<script src="<?=ROOT?>/../public/assets/js/app.js"></script>
 
 </body>
 </html>
