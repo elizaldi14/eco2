@@ -52,10 +52,13 @@
             style="object-fit:cover;">
     </a>
     <div class="card-content">
+        <p style="color: black;">
+            <?=esc($row['category'] ?? 'Unknown')?>
+        </p>
         <a href="<?=ROOT?>/post/<?=$row['slug']?>">
-            <h5>
+            <h2 style="margin: 0px;">
                 <?=esc($row['title'])?>
-            </h5>
+            </h2>
         </a>
 
         <p>

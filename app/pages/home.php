@@ -188,7 +188,7 @@
             </div>
             <div class="row">
                 <div class="tiny tiny-center">
-                    <br><a href="/contact/" class="btn normal">Feature your website here?</a>
+                    <br><a href="<?=ROOT?>/news-3" class="btn normal">See Other News</a>
                 </div>
             </div>
         </div>
