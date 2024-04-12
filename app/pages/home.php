@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
 
-    <title>CO2 Observer</title>
+    <title>Ecomania | Home</title>
 
     <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/gridder.css">
     <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/app.css">

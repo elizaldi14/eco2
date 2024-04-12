@@ -1,40 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>CO2 Observer | About</title>
-        <link rel="stylesheet" href="./assets/css/gridder.css">
-    	<link rel="stylesheet" href="./assets/css/app.css">
-        <meta name="description" content="The CO2 Emission Estimation API provides a mechanism to estimate the carbon footprint of a website on every load. With the increasing awareness of environmental concerns, understanding the carbon footprint of digital assets is becoming crucial. ">
-        <meta property="og:title" content="CO2 Observer | About">
-        <meta property="og:description" content="The CO2 Emission Estimation API provides a mechanism to estimate the carbon footprint of a website on every load. With the increasing awareness of environmental concerns, understanding the carbon footprint of digital assets is becoming crucial. ">
-        <meta property="og:image" content="https://co2.observer/assets/img/logo-gfx.png">
-        <meta property="og:image:alt" content="The CO2 Emission Estimation API provides a mechanism to estimate the carbon footprint of a website on every load. With the increasing awareness of environmental concerns, understanding the carbon footprint of digital assets is becoming crucial. ">
-        <meta property="og:locale" content="en_GB">
-        <meta property="og:type" content="website"><meta name="twitter:card"content="https://co2.observer/assets/img/logo-gfx.png"">
-    <meta property="og:url " content="https://co2.observer ">
-    <link rel="canonical " href="https://co2.observer ">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Ecomania | About</title>
 
-    <link rel="apple-touch-icon " sizes="180x180 " href="./assets/img/apple-touch-icon.png ">
-    <link rel="icon " type="image/png " sizes="32x32 " href="./assets/img/favicon-32x32.png ">
-    <link rel="icon " type="image/png " sizes="16x16 " href="./assets/img/favicon-16x16.png ">
-    <link rel="manifest " href="./assets/img/site.webmanifest ">
-    <link rel="mask-icon " href="./assets/img/safari-pinned-tab.svg " color="#4e7d6a ">
-    <link rel="shortcut icon " href="/assets/img/favicon.ico ">
-    <meta name="msapplication-TileColor " content="#e5f4df ">
-    <meta name="msapplication-config " content="./assets/img/browserconfig.xml ">
+	<link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/gridder.css">
+    <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/app.css">
+
     <meta name="theme-color " content="#ffffff ">
 </head>
 <body>
 
 <header class="header graphic-4 ">
-	<div class="container ">
-    <div class="navigation ">
-        <div class="row ">
-            <div class="tiny-4 small-4 medium-4 ">
-                <a href="/" class="logo ">
-                    <svg width="199 " height="73 " viewBox="0 0 199 73 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+	<div class="container">
+    <div class="navigation">
+        <div class="row">
+            <div class="tiny-4 small-4 medium-4">
+				<a href="<?=ROOT?>/home" class="logo">
+					<label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                    <svg width="199" height="73" viewBox="0 0 199 73 " fill="none " xmlns="http://www.w3.org/2000/svg ">
                         <mask id="mask0_70_33 " style="mask-type:alpha " maskUnits="userSpaceOnUse " x="0 " y="0 " width="73 " height="73 ">
                             <circle cx="36.5 " cy="36.5 " r="36.5 " fill="#D9D9D9 "/>
                         </mask>
@@ -63,18 +48,18 @@
 
                 </a>
             </div>
-            <?php include './assets/components/header.php';?>
+            <?php include '../app/pages/includes/header-1.php';?>
         </div>
     </div>
 </div>
-	<div class="container ">
-		<div class="row ">
-			<div class="tiny-12 small-6 medium-6 tiny-center small-start ">
+	<div class="container">
+		<div class="row">
+			<div class="tiny-12 small-6 medium-6 tiny-center small-start">
 				<h1>How does it work?</h1>
 				<p style="font-size:1.35rem;">Calculating a website's carbon footprint is far from simple; however, we've invested numerous hours refining a method for this complex task. While our approach primarily relies on the latest data, it inevitably includes some elements of estimation. Therefore, consider the results as a general guide rather than precise science.</p>
 			</div>
-			<div class="tiny-12 small-6 medium-6 tiny-center small-end ">
-				<img src="./assets/img/graphic-17.svg " alt="">
+			<div class="tiny-12 small-6 medium-6 tiny-center small-end">
+				<img src="./assets/img/graphic-17.svg" alt="">
 			</div>
 		</div>
 	</div>
@@ -217,9 +202,10 @@
 
 <!--Footer--->
 
-<?php include './assets/components/footer.php';?>
-<script src="./assets/js/countUp.js "></script>
-<script src="./assets/js/app.js "></script>
+<?php include '../app/pages/includes/footer-1.php';?>
+
+<script src="<?=ROOT?>/../public/assets/js/countUp.js"></script>
+<script src="<?=ROOT?>/../public/assets/js/app.js"></script>
 
 </body>
 </html>

@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>CO2 Observer | Contact</title>
-    <link rel="stylesheet" href="./assets/css/gridder.css">
-    <link rel="stylesheet" href="./assets/css/app.css">
+    
+    <title>Ecomania | Contact</title>
+
+    <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/gridder.css">
+    <link rel="stylesheet" href="<?=ROOT?>/../public/assets/css/app.css">
 
     <meta name="theme-color " content="#ffffff ">
 </head>
