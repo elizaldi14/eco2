@@ -54,10 +54,10 @@ body {
 
 }
 
-.navigation ul li:hover {
+.navigation ul li:hover { /* marca con blanco  al pasar el cursor */
     background: var(--white);
-    padding-top: 10px; /* Ajusta el relleno hacia arriba */
-    padding-bottom: 10px;   
+    padding-top: 10px; /*  relleno hacia arriba */
+    padding-bottom: 10px;   /*  relleno hacia arriba */
 }
 
 .navigation ul li:nth-child(1) {
